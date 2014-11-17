@@ -14,6 +14,10 @@ $(document).ready(function() {
             })
         });
 
+    // adjust to mobile
+    if (window.innerWidth < 600)
+        $("#viewport").attr('content', 'width=600px');
+
     // Spam bots, go away!     
     $('#email').click(function() {
         document.location.href = "mailto:" + generate_address();
