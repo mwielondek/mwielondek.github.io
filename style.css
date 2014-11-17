@@ -6,21 +6,21 @@ div#bg {
     width: 100%;
     left: 0;
     top: 0;
-    opacity: 0.3;
+    opacity: 0.15;
     z-index: -1;
 }
 div#main {
     margin: 0 auto;
-    display: block;
     height: 600;
     width: 600;
     background-image: url('main2.png');
     background-repeat: no-repeat;
 }
 div#links {
+    display: inline-block;
     position: relative;
     left: 170px;
-    top: 270px;
+    top: 260px;
 }
 div#main img {
     position: relative;

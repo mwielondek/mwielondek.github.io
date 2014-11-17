@@ -1,5 +1,7 @@
-$(document).ready(function() {
+$(window).load(function() {
+    // initial icon animation
     $('div#main img')
+        .delay(200)
         .css('top', '-30px')
         .hover(function() {
             $(this).toggleClass('grayscale');
@@ -17,15 +19,21 @@ $(document).ready(function() {
     // adjust to mobile
     if (window.innerWidth < 600)
         $("#viewport").attr('content', 'width=600px');
+    
+    // deactivate hover:grayscale if touch device
+    if ('ontouchstart' in document.documentElement) 
+        $('div#main img').removeClass('grayscale');
 
-    // Spam bots, go away!     
+    // spam bots, go away!     
     $('#email').click(function() {
         document.location.href = "mailto:" + generate_address();
     });
 });
 
 
-// security through obscurity
+// "security through obscurity is not the
+// hero we deserve, but the hero we need"
+// - Batman
 var generate_address = function() {
     var email1 = "zsolim";
     var email2 = "kednoleiw@";
