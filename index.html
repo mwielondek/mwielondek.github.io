@@ -17,14 +17,41 @@
             opacity: 0.3;
             z-index: -1;
         }
-        img {
-            margin: auto;
+        div#main {
+            margin: 0 auto;
             display: block;
+            height: 600;
+            width: 600;
+            background-image: url('main2.png');
+            background-repeat: no-repeat;
+        }
+        div#links {
+            position: relative;
+            left: 170px;
+            top: 270px;
+        }
+        div#main img {
+            height: 50px;
+        }
+        ul>li {
+            display: inline;
+            padding-right: 15px;
         }
     </style>
 </head>
 <body>
     <div id="bg"></div>
-    <img src="main.png">
+    <div id="main">
+        <div id="links">
+            <ul>
+                <li><a href=""><img src="icons/email2.png" alt=""></a></li>
+                <li><a href=""><img src="icons/facebook.png" alt=""></a></li>
+                <!-- <li><a href=""><img src="icons/twitter.png" alt=""></a></li> -->
+                <li><a href=""><img src="icons/linkedin.png" alt=""></a></li>
+                <li><a href=""><img src="icons/github.png" alt=""></a></li>
+                <li><a href=""><img src="icons/stackoverflow.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
