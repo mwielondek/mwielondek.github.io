@@ -51,7 +51,7 @@ div#main {
 
 a {
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: all 2s ease;
 }
 
 a img:hover {
@@ -73,6 +73,12 @@ a img:hover {
     flex-direction: column;
   }
   body::before {
-    background-position-x: -22vw;
+    background-position-x: -10vw;
+  }
+  div#container {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.55) 30%, rgba(0, 0, 0, 0.2) 50%);
+  }
+  div#title {
+    /*text-shadow: 0px 1px 3px black;*/
   }
 }
