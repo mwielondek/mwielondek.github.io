@@ -18,18 +18,7 @@ div#title {
   color: rgba(255, 255, 255, 1);
   font-size: 26pt;
   text-shadow: 0px 3px 2px black;
-}
-
-@media screen and (min-width: 600px) {
-  div#title {
-    font-size: 68pt;
-  }
-  div#main {
-    text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+  padding: 30px;
 }
 
 div#container {
@@ -42,13 +31,21 @@ div#container {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-div#links ul {
-  padding: 0;
-}
-
 div#links li {
   display: inline;
-  padding: 48px;
+}
+
+div#links, div#links ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+div#main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 a img {
@@ -59,4 +56,23 @@ a img:hover {
   transition: all 0.1s ease;
   transform: scale(0.97);
   filter: drop-shadow(0 -1px 2px black);
+}
+
+@media screen and (min-width: 820px) {
+  div#title {
+    font-size: 68pt;
+  }
+  div#main {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  div#links ul {
+    flex-direction: row;
+  }
+  div#links li {
+    display: inline;
+    padding: 48px;
+  }
 }
