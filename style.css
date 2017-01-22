@@ -9,8 +9,6 @@ body:before {
     height: 100%;
     background-image: url('bg_opt.jpg');
     background-size: cover;
-    filter: blur(2px) sepia(30%);
-    transform: scale(1.05);
 }
 
 div#container {
@@ -21,17 +19,18 @@ div#container {
   min-height: 350px;
   width: 100%;
   transform-style: preserve-3d;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.8s ease-out;
+  opacity: 0;
 }
 
 div#title {
   font-family: 'Megrim', monospace;
   color: rgba(255, 255, 255, 1);
   font-size: 10vw;
-  text-shadow: 0px 3px 2px black;
   padding-top: 20px;
 }
 
@@ -50,8 +49,9 @@ div#main {
   flex-direction: column;
 }
 
-a img {
-  filter: drop-shadow(0 4px 3px black);
+a {
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 
 a img:hover {
@@ -73,6 +73,6 @@ a img:hover {
     flex-direction: column;
   }
   body::before {
-    background-position-x: -18vw;
+    background-position-x: -22vw;
   }
 }
