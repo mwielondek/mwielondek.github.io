@@ -13,37 +13,39 @@ body:before {
     transform: scale(1.05);
 }
 
-div#title {
-  font-family: 'Megrim', monospace;
-  color: rgba(255, 255, 255, 1);
-  font-size: 26pt;
-  text-shadow: 0px 3px 2px black;
-  padding: 30px;
-}
-
 div#container {
   position: fixed;
   left: 0;
   top: 0;
   height: 100%;
+  min-height: 350px;
   width: 100%;
   transform-style: preserve-3d;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div#title {
+  font-family: 'Megrim', monospace;
+  color: rgba(255, 255, 255, 1);
+  font-size: 10vw;
+  text-shadow: 0px 3px 2px black;
+  padding-top: 20px;
 }
 
 div#links li {
   display: inline;
 }
 
-div#links, div#links ul {
-  height: 100%;
+div#links ul {
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 div#main {
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -58,21 +60,19 @@ a img:hover {
   filter: drop-shadow(0 -1px 2px black);
 }
 
-@media screen and (min-width: 820px) {
-  div#title {
-    font-size: 68pt;
-  }
+@media screen and (max-width: 550px) {
   div#main {
-    text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    height: 100%;
+  }
+  div#links {
+    height: 100%;
+    display: flex;
+    padding: 20px 0;
   }
   div#links ul {
-    flex-direction: row;
+    flex-direction: column;
   }
-  div#links li {
-    display: inline;
-    padding: 48px;
+  body::before {
+    background-position-x: -18vw;
   }
 }
