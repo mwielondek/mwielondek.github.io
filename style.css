@@ -14,37 +14,47 @@ body:before {
 }
 
 div#title {
-  font-family: monospace;
-  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Megrim', monospace;
+  color: rgba(255, 255, 255, 1);
   font-size: 26pt;
-  padding-top: 14px;
-  text-align: center;
+  text-shadow: 0px 2px 2px black;
 }
 
 @media screen and (min-width: 600px) {
   div#title {
-    font-size: 76pt;
+    font-size: 68pt;
+  }
+  div#main {
+    text-align: center;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
   }
 }
 
-div#main {
+div#container {
   position: fixed;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-@font-face {
-  font-family: 'Socialico';
-  src: url('Socialico.tff');
+div#links ul {
+  padding: 0;
 }
 
-span#test {
-  font-family: 'Socialico';
-  font-size: 34em;
+div#links li {
+  display: inline;
+  padding: 48px;
+}
+
+a img {
+  filter: drop-shadow(0 0 13px black);
+}
+
+a img:hover {
+  transition: 0.3s;
+  filter: drop-shadow(0 0 13px black);
 }
