@@ -71,12 +71,12 @@ a img:hover {
     flex-direction: column;
   }
   body::before {
-    background-position-x: -10vw;
+    background-position-x: calc(26% + 120px);
   }
   div#container {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.55) 30%, rgba(0, 0, 0, 0.2) 50%);
   }
   div#title {
-    /*text-shadow: 0px 1px 3px black;*/
+    text-shadow: 0px 1px 3px black;
   }
 }
