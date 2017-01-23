@@ -28,12 +28,11 @@ window.onload = function() {
     var counter = 0;
     var timelimit = 1000;
     var tapsreq = 5;
-    return function() {
-      if (counter == 0) setTimeout(function() { counter = 0; }, timelimit);
+    return function(evt) {
+      evt.preventDefault();
       counter += 1;
-      if (counter == tapsreq) {
-        dropWisdom();
-      }
+      if (counter == 1) setTimeout(function() { counter = 0; }, timelimit);
+      if (counter == tapsreq) dropWisdom();
     };
   }();
 
