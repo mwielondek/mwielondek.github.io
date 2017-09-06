@@ -1,0 +1,344 @@
+.column {
+  background-color: #000;
+}
+
+.section {
+  position: relative;
+  display: block;
+  overflow: visible;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.heading {
+  color: #fff;
+}
+
+.body {
+  overflow: hidden;
+}
+
+.row {
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+}
+
+.holder {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.col_split {
+  position: relative;
+  overflow: scroll;
+  height: 100%;
+}
+
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 360px;
+  height: 460px;
+  margin-top: -230px;
+  margin-left: -180px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.centerer_cont {
+  position: relative;
+  display: block;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.michael_col {
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.milo_col {
+  background-color: transparent;
+}
+
+.go_button {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 168px;
+  margin-top: 0px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 1px solid #000;
+  border-radius: 12px;
+  background-color: transparent;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  font-family: Lato, sans-serif;
+  color: #000;
+  font-weight: 300;
+  text-align: center;
+}
+
+.go_button:hover {
+  background-color: #000;
+  color: #fff;
+  font-weight: 400;
+}
+
+.profile_pic {
+  width: 180px;
+  margin-top: 0px;
+  border-style: solid;
+  border-color: #000;
+  border-radius: 100%;
+}
+
+.name {
+  margin-top: 10px;
+  font-family: Lato, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.tagline {
+  margin-bottom: 38px;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+}
+
+.overlay_michael {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.overlay_michael.overlay {
+  z-index: 2;
+  padding-right: 0px;
+  opacity: 0.35;
+}
+
+.overlay_milo {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.overlay_milo.overlay {
+  position: absolute;
+  z-index: 2;
+  opacity: 0.35;
+}
+
+.bg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/sylwia-bartyzel-112721.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.card_bot {
+  padding: 16px 101px;
+  border: 3px solid #000;
+}
+
+.cb {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.cardbottom {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-right: 92px;
+  margin-left: 92px;
+  padding-top: 14px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.socmed {
+  position: relative;
+  margin-top: -20px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.cont_button {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 168px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 1px solid #000;
+  border-radius: 12px;
+  background-color: transparent;
+  -webkit-transition: background-color 400ms ease;
+  transition: background-color 400ms ease;
+  font-family: Lato, sans-serif;
+  color: #000;
+  font-weight: 300;
+  text-align: center;
+}
+
+.cont_button:hover {
+  background-color: #000;
+  color: #fff;
+  font-weight: 400;
+}
+
+.image {
+  position: static;
+}
+
+.fader {
+  position: fixed;
+  z-index: 100;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.title {
+  position: fixed;
+  left: 0px;
+  top: 50%;
+  right: 0px;
+  display: block;
+  margin-top: -16px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: transparent;
+  opacity: 0.64;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+html.w-mod-js *[data-ix="bg-movement"] {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+html.w-mod-js *[data-ix="fadein"] {
+  display: block;
+  opacity: 1;
+}
+
+html.w-mod-js *[data-ix="new-interaction"] {
+  opacity: 0;
+}
+
+@media (max-width: 479px) {
+  .holder {
+    height: 100%;
+  }
+  .card {
+    margin-top: -250px;
+  }
+  .div-block {
+    position: fixed;
+  }
+  .mobilescrollindicator {
+    position: fixed;
+    left: 50%;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    width: 32px;
+    margin-bottom: 6px;
+    margin-left: -16px;
+    opacity: 0.74;
+  }
+}
+
