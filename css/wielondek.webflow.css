@@ -221,30 +221,13 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  margin-right: 92px;
-  margin-left: 92px;
-  padding-top: 14px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  justify-content: space-between;
+  width: 168px;
 }
 
 .socmed {
   position: relative;
   margin-top: -20px;
-  margin-right: 8px;
-  margin-left: 8px;
 }
 
 .cont_button {
@@ -341,4 +324,3 @@ html.w-mod-js *[data-ix="new-interaction"] {
     opacity: 0.74;
   }
 }
-
