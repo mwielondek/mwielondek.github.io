@@ -36,7 +36,7 @@
 
 .col_split {
   position: relative;
-  overflow: scroll;
+  overflow: visible;
   height: 100%;
 }
 
@@ -300,6 +300,13 @@ html.w-mod-js *[data-ix="fadein"] {
 
 html.w-mod-js *[data-ix="new-interaction"] {
   opacity: 0;
+}
+
+
+@media (max-width: 767px) {
+  .col_split {
+    overflow: scroll;
+  }
 }
 
 @media (max-width: 479px) {
